@@ -51,8 +51,8 @@ fun main() {
             zeroHits += hitsThisTurn
 
             position = when (direction) {
-                'L' -> wrapToDial(position - distance)
                 'R' -> wrapToDial(position + distance)
+                'L' -> wrapToDial(position - distance)
                 else -> error("Unknown rotation: $line")
             }
         }
